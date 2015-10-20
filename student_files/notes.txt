@@ -1,0 +1,2 @@
+Be sure to put your student_files directory on your PYTHONPATH for exercises
+and examples beginning with chapter 3.

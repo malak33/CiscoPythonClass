@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Baseball Stats</title>
+
+		<style>
+		    body { font: normal 14px Arial; }
+		    table { width: 60%; margin: 0 auto; font-size: 120%; border: 1px solid #005; }
+		    td { width: 33%; background-color: #fcc; }
+		    th { background-color: #ced; }
+		</style>
+
+	</head>
+	<body>
+		<div id="contactSearch">
+            <h3>Top Salaries for {{ records[0][3] }}</h3>
+			<table>
+                <tr><th>First Name</th><th>Last Name</th><th>Salary</th></tr>
+                {% for record in records %}
+                    <tr><td> {{ record[0] }} </td><td> {{ record[1] }} </td><td> {{ record[2] | formatter }} </td></tr>
+                {% endfor %}
+            </table>
+		</div>
+	</body>
+</html>
